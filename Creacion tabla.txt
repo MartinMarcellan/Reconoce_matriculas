@@ -1,2 +1,4 @@
+miConexion = sqlite3.connect("Data")
+miCursor = miConexion.cursor()
 miCursor.execute("CREATE TABLE FOTOS (Nombre_carpeta VARCHAR(50), Nombre_foto VARCHAR(50), Rel_areas VARCHAR(50), Numero_aviones int, Localizacion VARCHAR(100), Matricula VARCHAR(50) )")
 miCursor.execute("CREATE TABLE ENCONTRADAS (foto VARCHAR(50),matricula VARCHAR(50))")
