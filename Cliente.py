@@ -6,10 +6,10 @@ import shutil
 miConexion = sqlite3.connect("Data")
 miCursor = miConexion.cursor()
 
-cloudinary.config(
-    cloud_name='dqlgtokk8',
-    api_key='434278526675149',
-    api_secret='_pqv4v5VEuFeMuB5WuIG-UsSXxk'
+cloudinary.config( #Añade aqui los datos de tu cuenta de Cloudinary
+    cloud_name=,
+    api_key=,
+    api_secret=
 )
 
 carpetas = f.obtener_carpeta(miCursor)[0] #Correcta
